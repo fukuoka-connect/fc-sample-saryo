@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>茶寮 凛（さりょう りん）｜志免町の隠れ家日本茶カフェ｜完全予約制</title>
+<meta name="description" content="福岡県糟屋郡志免町、築60年の古民家で味わう一服の静けさ。八女茶農家から直接仕入れた茶葉を、茶道歴15年のオーナーが一杯ずつ点てる完全予約制の日本茶カフェ。1日10組限定。季節の和菓子とともに。LINE予約受付中。">
+<link rel="canonical" href="https://fukuoka-connect.github.io/fc-sample-saryo/">
+<meta property="og:title" content="茶寮 凛｜志免町の隠れ家日本茶カフェ・完全予約制">
+<meta property="og:description" content="築60年の古民家で、八女茶と季節の和菓子を。茶道歴15年のオーナーが一杯ずつ点てる、1日10組限定の静かな時間。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://fukuoka-connect.github.io/fc-sample-saryo/">
+<meta property="og:site_name" content="茶寮 凛 SARYO RIN">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="茶寮 凛｜志免町の隠れ家日本茶カフェ・完全予約制">
+<meta name="twitter:description" content="築60年の古民家で、八女茶と季節の和菓子を。1日10組限定の静かな時間。">
+
+<!-- GA4 Placeholder -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script> -->
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Klee+One:wght@400;600&family=Zen+Old+Mincho:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CafeOrCoffeeShop",
+  "name": "茶寮 凛",
+  "alternateName": "SARYO RIN",
+  "description": "築60年の古民家で味わう、八女茶と季節の和菓子。茶道歴15年のオーナーが一杯ずつ点てる完全予約制の日本茶カフェ。",
+  "url": "https://fukuoka-connect.github.io/fc-sample-saryo/",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "志免町",
+    "addressRegion": "福岡県",
+    "addressCountry": "JP"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Friday", "Saturday", "Sunday"],
+      "opens": "11:00",
+      "closes": "17:00"
+    }
+  ],
+  "servesCuisine": "日本茶・和菓子",
+  "priceRange": "$$",
+  "telephone": "+81-XXX-XXX-XXXX",
+  "acceptsReservations": "True"
+}
+</script>
+
+<style>
+/* ========================================
+   SARYO RIN v2 — テンプレ感ゼロ・崩しの美学
+   ======================================== */
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #FAF8F4;
+  --dark: #2C2922;
+  --accent: #5B7A5E;
+  --gold: #B8A272;
+  --bg-warm: #F5F0E8;
+
+  --font-mincho: 'Zen Old Mincho', serif;
+  --font-body: 'Klee One', cursive;
+  --font-en: 'Cormorant Garamond', serif;
+
+  --ease-out: cubic-bezier(.25,.46,.45,.94);
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--dark);
+  background: var(--bg);
+  line-height: 1.9;
+  letter-spacing: 0.04em;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; text-decoration: none; }
+.sm { font-size: 0.78em; }
+
+/* プレースホルダー画像 */
+.img-ph {
+  background: linear-gradient(135deg, #D4CFC5 0%, #E8E3DA 50%, #C9C2B5 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #A09888;
+  font-family: var(--font-en);
+  font-style: italic;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  position: relative;
+  overflow: hidden;
+}
+.img-ph::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 20px,
+    rgba(255,255,255,0.03) 20px,
+    rgba(255,255,255,0.03) 40px
+  );
+}
+
+/* フェードイン */
+.fi {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out);
+}
+.fi.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.fi-delay-1 { transition-delay: 0.15s; }
+.fi-delay-2 { transition-delay: 0.3s; }
+.fi-delay-3 { transition-delay: 0.45s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .fi { opacity: 1; transform: none; transition: none; }
+}
+
+/* ========================================
+   NAV
+   ======================================== */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 28px;
+  transition: background 0.4s var(--ease-out), box-shadow 0.4s var(--ease-out);
+}
+.nav.is-scrolled {
+  background: rgba(250, 248, 244, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 1px 0 rgba(44,41,34,0.06);
+}
+.nav__logo {
+  font-family: var(--font-mincho);
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  color: var(--dark);
+}
+.nav__cta {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  padding: 10px 24px;
+  border: 1px solid var(--dark);
+  color: var(--dark);
+  transition: background 0.22s var(--ease-out), color 0.22s var(--ease-out);
+}
+.nav__cta:hover {
+  background: var(--dark);
+  color: var(--bg);
+}
+
+/* ========================================
+   HERO
+   ======================================== */
+.hero {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 12vh;
+}
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero__bg.img-ph {
+  background: linear-gradient(160deg, #C9C2B5 0%, #D8D2C6 30%, #B8B0A0 60%, #D4CFC5 100%);
+}
+.hero__copy {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+.hero__catch {
+  font-family: var(--font-mincho);
+  font-size: clamp(28px, 6vw, 56px);
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  color: var(--bg);
+  text-shadow: 0 2px 40px rgba(44,41,34,0.3);
+  line-height: 1.6;
+}
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(44,41,34,0) 0%,
+    rgba(44,41,34,0.08) 40%,
+    rgba(44,41,34,0.35) 100%
+  );
+  z-index: 1;
+}
+
+/* ========================================
+   呼吸の余白
+   ======================================== */
+.breath {
+  height: 280px;
+  background: var(--bg);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.breath__ghost {
+  font-family: var(--font-en);
+  font-style: italic;
+  font-size: clamp(48px, 8vw, 100px);
+  letter-spacing: 0.3em;
+  color: var(--dark);
+  opacity: 0.03;
+  user-select: none;
+  white-space: nowrap;
+}
+
+/* ========================================
+   空間 SECTION
+   ======================================== */
+.space {
+  padding: 0 0 240px 0;
+  position: relative;
+  overflow: visible;
+}
+.space__inner {
+  display: grid;
+  grid-template-columns: 55% 1fr;
+  gap: 0;
+  align-items: start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.space__visual {
+  position: relative;
+  margin-left: -5vw;
+}
+.space__photo {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+}
+.space__number {
+  position: absolute;
+  bottom: -40px;
+  right: -20px;
+  font-family: var(--font-en);
+  font-size: clamp(64px, 12vw, 160px);
+  font-weight: 300;
+  font-style: italic;
+  color: var(--bg);
+  line-height: 1;
+  opacity: 0.85;
+  text-shadow: 0 4px 30px rgba(44,41,34,0.15);
+  z-index: 2;
+}
+.space__content {
+  padding: 80px 5vw 0 40px;
+  position: relative;
+}
+.space__heading {
+  font-family: var(--font-mincho);
+  font-size: clamp(24px, 3.5vw, 40px);
+  font-weight: 400;
+  writing-mode: vertical-rl;
+  letter-spacing: 0.25em;
+  line-height: 2;
+  margin-bottom: 60px;
+  color: var(--dark);
+}
+.space__label {
+  font-family: var(--font-en);
+  font-style: italic;
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  color: var(--gold);
+  margin-bottom: 24px;
+  display: block;
+}
+.space__text {
+  font-size: 0.95rem;
+  line-height: 2.2;
+  max-width: 320px;
+  color: var(--dark);
+  opacity: 0.85;
+}
+
+/* ========================================
+   茶 SECTION
+   ======================================== */
+.tea {
+  padding: 0 0 260px 0;
+  position: relative;
+  overflow: hidden;
+}
+.tea__bg-text {
+  position: absolute;
+  top: -20px;
+  left: -2vw;
+  font-family: var(--font-en);
+  font-style: italic;
+  font-size: clamp(80px, 14vw, 200px);
+  letter-spacing: 0.2em;
+  color: var(--dark);
+  opacity: 0.03;
+  user-select: none;
+  white-space: nowrap;
+  z-index: 0;
+}
+.tea__inner {
+  display: grid;
+  grid-template-columns: 1fr 50%;
+  gap: 0;
+  align-items: start;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+.tea__content {
+  padding: 60px 40px 0 5vw;
+}
+.tea__yame {
+  font-family: var(--font-mincho);
+  font-size: clamp(48px, 10vw, 120px);
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  line-height: 1.1;
+  color: var(--dark);
+  margin-bottom: 40px;
+}
+.tea__label {
+  font-family: var(--font-en);
+  font-style: italic;
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  color: var(--gold);
+  margin-bottom: 24px;
+  display: block;
+}
+.tea__text {
+  font-size: 0.95rem;
+  line-height: 2.2;
+  max-width: 360px;
+  color: var(--dark);
+  opacity: 0.85;
+}
+.tea__visual {
+  position: relative;
+  margin-right: -5vw;
+}
+.tea__photo {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+}
+
+/* ========================================
+   和菓子 SECTION
+   ======================================== */
+.wagashi {
+  padding: 0 5vw 240px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+.wagashi__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  position: relative;
+}
+.wagashi__photo-wrap {
+  position: relative;
+  grid-column: 1;
+  grid-row: 1;
+}
+.wagashi__photo {
+  width: 100%;
+  aspect-ratio: 1 / 1.15;
+}
+.wagashi__kanji {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--font-mincho);
+  font-size: clamp(64px, 12vw, 160px);
+  font-weight: 400;
+  color: var(--bg);
+  opacity: 0.75;
+  text-shadow: 0 4px 40px rgba(44,41,34,0.2);
+  z-index: 2;
+  line-height: 1;
+}
+.wagashi__content {
+  grid-column: 2;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 0;
+}
+.wagashi__content-inner {
+  background: var(--bg-warm);
+  padding: 48px 40px;
+  margin-top: auto;
+  margin-left: -60px;
+  position: relative;
+  z-index: 3;
+}
+.wagashi__label {
+  font-family: var(--font-en);
+  font-style: italic;
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  color: var(--gold);
+  margin-bottom: 20px;
+  display: block;
+}
+.wagashi__heading {
+  font-family: var(--font-mincho);
+  font-size: clamp(20px, 2.5vw, 30px);
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+.wagashi__text {
+  font-size: 0.95rem;
+  line-height: 2.2;
+  color: var(--dark);
+  opacity: 0.85;
+}
+
+/* ========================================
+   声 SECTION
+   ======================================== */
+.voice {
+  padding: 200px 5vw;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+.voice__label {
+  font-family: var(--font-en);
+  font-style: italic;
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  color: var(--gold);
+  margin-bottom: 80px;
+  display: block;
+}
+.voice__item {
+  margin-bottom: 80px;
+}
+.voice__item:last-child {
+  margin-bottom: 0;
+}
+.voice__quote {
+  font-family: var(--font-mincho);
+  font-size: clamp(16px, 2vw, 20px);
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  line-height: 2.2;
+  color: var(--dark);
+  margin-bottom: 20px;
+  position: relative;
+}
+.voice__quote::before {
+  content: '\201C';
+  font-family: var(--font-en);
+  font-size: 4rem;
+  color: var(--gold);
+  opacity: 0.3;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  line-height: 1;
+}
+.voice__attr {
+  font-size: 0.8rem;
+  color: var(--dark);
+  opacity: 0.5;
+  letter-spacing: 0.1em;
+}
+
+/* ========================================
+   予約 CTA
+   ======================================== */
+.cta {
+  padding: 200px 5vw;
+  text-align: center;
+  background: var(--bg);
+  position: relative;
+}
+.cta__loss {
+  font-family: var(--font-mincho);
+  font-size: clamp(16px, 2.5vw, 22px);
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  line-height: 2;
+  color: var(--dark);
+  opacity: 0.7;
+  margin-bottom: 60px;
+}
+.cta__sub {
+  font-family: var(--font-en);
+  font-style: italic;
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  color: var(--gold);
+  margin-bottom: 16px;
+  display: block;
+}
+.cta__info {
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  color: var(--dark);
+  opacity: 0.5;
+  margin-bottom: 48px;
+}
+.cta__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 56px;
+  background: var(--accent);
+  color: var(--bg);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  letter-spacing: 0.12em;
+  border: none;
+  cursor: pointer;
+  transition: background 0.22s var(--ease-out), transform 0.22s var(--ease-out);
+}
+.cta__btn:hover {
+  background: #4A6A4D;
+  transform: translateY(-2px);
+}
+.cta__btn svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/* ========================================
+   ACCESS + FOOTER
+   ======================================== */
+.access {
+  padding: 160px 5vw 80px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.access__label {
+  font-family: var(--font-en);
+  font-style: italic;
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  color: var(--gold);
+  margin-bottom: 48px;
+  text-align: center;
+  display: block;
+}
+.access__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+.access__map {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border: none;
+}
+.access__map.img-ph {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.access__info {
+  padding-top: 8px;
+}
+.access__name {
+  font-family: var(--font-mincho);
+  font-size: 1.4rem;
+  letter-spacing: 0.15em;
+  margin-bottom: 32px;
+}
+.access__dl {
+  font-size: 0.88rem;
+  line-height: 2;
+}
+.access__dl dt {
+  font-family: var(--font-en);
+  font-style: italic;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  color: var(--gold);
+  margin-top: 20px;
+}
+.access__dl dt:first-child {
+  margin-top: 0;
+}
+.access__dl dd {
+  color: var(--dark);
+  opacity: 0.85;
+}
+
+.footer {
+  padding: 80px 5vw 40px;
+  text-align: center;
+  border-top: 1px solid rgba(44,41,34,0.06);
+}
+.footer__brand {
+  font-family: var(--font-mincho);
+  font-size: 1.2rem;
+  letter-spacing: 0.2em;
+  margin-bottom: 8px;
+}
+.footer__en {
+  font-family: var(--font-en);
+  font-style: italic;
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  color: var(--gold);
+  margin-bottom: 40px;
+}
+.footer__copy {
+  font-size: 0.7rem;
+  color: var(--dark);
+  opacity: 0.35;
+  letter-spacing: 0.05em;
+}
+.footer__copy a {
+  color: var(--dark);
+  opacity: 0.5;
+  transition: opacity 0.22s var(--ease-out);
+}
+.footer__copy a:hover {
+  opacity: 0.8;
+}
+
+/* ========================================
+   モバイル固定CTA
+   ======================================== */
+.mobile-cta {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  padding: 12px 16px;
+  background: rgba(250,248,244,0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 -1px 0 rgba(44,41,34,0.06);
+}
+.mobile-cta__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 16px;
+  background: var(--accent);
+  color: var(--bg);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  border: none;
+  cursor: pointer;
+}
+.mobile-cta__btn svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+@media (max-width: 768px) {
+
+  .nav {
+    padding: 16px 20px;
+  }
+  .nav__logo {
+    font-size: 1.3rem;
+  }
+  .nav__cta {
+    font-size: 0.7rem;
+    padding: 8px 18px;
+  }
+
+  .hero {
+    padding-bottom: 16vh;
+    min-height: 500px;
+  }
+  .hero__catch {
+    letter-spacing: 0.15em;
+    padding: 0 20px;
+  }
+
+  .breath {
+    height: 180px;
+  }
+
+  /* 空間 */
+  .space {
+    padding-bottom: 160px;
+  }
+  .space__inner {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .space__visual {
+    margin-left: -3vw;
+    margin-right: 10vw;
+  }
+  .space__photo {
+    aspect-ratio: 4 / 3;
+  }
+  .space__number {
+    bottom: -20px;
+    right: -10px;
+    font-size: clamp(56px, 18vw, 120px);
+  }
+  .space__content {
+    padding: 40px 20px 0;
+  }
+  .space__heading {
+    writing-mode: horizontal-tb;
+    font-size: clamp(22px, 5vw, 32px);
+    margin-bottom: 32px;
+    line-height: 1.8;
+  }
+  .space__text {
+    max-width: 100%;
+  }
+
+  /* 茶 */
+  .tea {
+    padding-bottom: 160px;
+  }
+  .tea__inner {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .tea__content {
+    padding: 0 20px 40px;
+    order: 1;
+  }
+  .tea__visual {
+    order: 2;
+    margin-right: -3vw;
+    margin-left: 10vw;
+  }
+  .tea__photo {
+    aspect-ratio: 4 / 3;
+  }
+  .tea__yame {
+    font-size: clamp(40px, 14vw, 80px);
+  }
+  .tea__text {
+    max-width: 100%;
+  }
+
+  /* 和菓子 */
+  .wagashi {
+    padding-bottom: 160px;
+  }
+  .wagashi__grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .wagashi__photo-wrap {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .wagashi__content {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .wagashi__content-inner {
+    margin-left: 0;
+    margin-top: -40px;
+    margin-right: 20px;
+    padding: 36px 28px;
+  }
+
+  /* 声 */
+  .voice {
+    padding: 120px 20px;
+  }
+  .voice__label {
+    margin-bottom: 60px;
+  }
+  .voice__item {
+    margin-bottom: 60px;
+  }
+
+  /* CTA */
+  .cta {
+    padding: 120px 20px 160px;
+  }
+
+  /* ACCESS */
+  .access {
+    padding: 100px 20px 60px;
+  }
+  .access__grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .access__map {
+    aspect-ratio: 16 / 10;
+  }
+
+  /* モバイル固定CTA表示 */
+  .mobile-cta {
+    display: block;
+  }
+
+  .footer {
+    padding-bottom: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero__catch {
+    font-size: clamp(22px, 7vw, 36px);
+  }
+  .wagashi__kanji {
+    font-size: clamp(48px, 20vw, 100px);
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ===== NAV ===== -->
+<nav class="nav" id="nav">
+  <span class="nav__logo">凛</span>
+  <a href="#line-reserve" class="nav__cta">LINE<span class="sm">で</span>予約</a>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero__bg img-ph" role="img" aria-label="古民家の光が差す畳の間">photo : tatami room with light</div>
+  <div class="hero__overlay"></div>
+  <div class="hero__copy fi">
+    <h1 class="hero__catch">静けさ<span class="sm">を</span>、飲む。</h1>
+  </div>
+</section>
+
+<!-- ===== 呼吸の余白 ===== -->
+<div class="breath" aria-hidden="true">
+  <span class="breath__ghost">SARYO RIN</span>
+</div>
+
+<!-- ===== 空間 SECTION ===== -->
+<section class="space">
+  <div class="space__inner">
+    <div class="space__visual fi">
+      <div class="space__photo img-ph" role="img" aria-label="築60年の古民家外観">photo : 60-year-old kominka</div>
+      <span class="space__number">60</span>
+    </div>
+    <div class="space__content">
+      <h2 class="space__heading fi">築六十年<span class="sm">の</span>、呼吸。</h2>
+      <span class="space__label fi fi-delay-1">Space</span>
+      <p class="space__text fi fi-delay-2">
+        昭和<span class="sm">の</span>棟梁<span class="sm">が</span>組んだ梁。<br>
+        磨き込まれた欅<span class="sm">の</span>柱。<br>
+        障子越し<span class="sm">に</span>揺れる木漏れ日。<br><br>
+        この空間<span class="sm">は</span>、なにも足さず、<br>
+        ただ、時間<span class="sm">の</span>重なり<span class="sm">を</span><br>
+        そのまま残しています。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 茶 SECTION ===== -->
+<section class="tea">
+  <span class="tea__bg-text" aria-hidden="true">YAME CHA</span>
+  <div class="tea__inner">
+    <div class="tea__content">
+      <div class="tea__yame fi">八女</div>
+      <span class="tea__label fi fi-delay-1">Tea</span>
+      <p class="tea__text fi fi-delay-2">
+        福岡・八女。<br>
+        霧深い山間<span class="sm">の</span>茶畑<span class="sm">から</span>、<br>
+        農家<span class="sm">が</span>直接届ける茶葉だけ<span class="sm">を</span>使います。<br><br>
+        茶道歴十五年<span class="sm">の</span>店主<span class="sm">が</span>、<br>
+        その日<span class="sm">の</span>気温と湿度<span class="sm">を</span>見て、<br>
+        一杯ずつ、点てます。<br><br>
+        同じ味<span class="sm">は</span>、二度と出ません。
+      </p>
+    </div>
+    <div class="tea__visual fi">
+      <div class="tea__photo img-ph" role="img" aria-label="八女茶を点てる様子">photo : brewing yame cha</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 和菓子 SECTION ===== -->
+<section class="wagashi">
+  <div class="wagashi__grid">
+    <div class="wagashi__photo-wrap fi">
+      <div class="wagashi__photo img-ph" role="img" aria-label="季節の和菓子">photo : seasonal wagashi</div>
+      <span class="wagashi__kanji" aria-hidden="true">季</span>
+    </div>
+    <div class="wagashi__content fi fi-delay-1">
+      <div class="wagashi__content-inner">
+        <span class="wagashi__label">Wagashi</span>
+        <h2 class="wagashi__heading">
+          季節<span class="sm">を</span>、ひとくち<span class="sm">で</span>。
+        </h2>
+        <p class="wagashi__text">
+          春<span class="sm">は</span>桜餅、夏<span class="sm">は</span>水羊羹、<br>
+          秋<span class="sm">は</span>栗蒸し、冬<span class="sm">は</span>柚子餅。<br><br>
+          近隣<span class="sm">の</span>和菓子職人<span class="sm">が</span>、<br>
+          茶寮 凛<span class="sm">の</span>ため<span class="sm">だけに</span>手がける<br>
+          季節<span class="sm">の</span>一品。<br><br>
+          お茶<span class="sm">と</span>和菓子、その組み合わせ<span class="sm">は</span><br>
+          来るたび<span class="sm">に</span>変わります。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 声 SECTION ===== -->
+<section class="voice">
+  <span class="voice__label fi">Voice</span>
+  <div class="voice__item fi fi-delay-1">
+    <p class="voice__quote">
+      ここに来ると、スマホを見る気がなくなる。<br>
+      それだけで、来た価値があると思った。
+    </p>
+    <p class="voice__attr">30代女性 -- 福岡市</p>
+  </div>
+  <div class="voice__item fi fi-delay-2">
+    <p class="voice__quote">
+      お茶の味が毎回違うと聞いて半信半疑だったけど、<br>
+      本当に違った。今日の一杯は、今日だけのもの。
+    </p>
+    <p class="voice__attr">40代男性 -- 糟屋郡</p>
+  </div>
+</section>
+
+<!-- ===== 予約 CTA ===== -->
+<section class="cta" id="line-reserve">
+  <p class="cta__loss fi">
+    この静けさ<span class="sm">は</span>、<br>
+    明日<span class="sm">には</span>もう、ない<span class="sm">かも</span>しれません。
+  </p>
+  <span class="cta__sub fi fi-delay-1">Reservation</span>
+  <p class="cta__info fi fi-delay-1">完全予約制 -- 1日10組限定</p>
+  <a href="#" class="cta__btn fi fi-delay-2" aria-label="LINEで予約する">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.104-.51-.275l-2.443-3.317v2.965c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.064-.022.134-.033.2-.033.195 0 .375.105.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+    LINE<span class="sm">で</span>予約する
+  </a>
+</section>
+
+<!-- ===== ACCESS + FOOTER ===== -->
+<section class="access">
+  <span class="access__label fi">Access</span>
+  <div class="access__grid">
+    <div class="access__map img-ph fi" role="img" aria-label="茶寮 凛の地図">
+      Google Maps Embed
+    </div>
+    <div class="access__info fi fi-delay-1">
+      <h2 class="access__name">茶寮 凛</h2>
+      <dl class="access__dl">
+        <dt>Address</dt>
+        <dd>福岡県糟屋郡志免町○○ 0-0-0</dd>
+        <dt>Open</dt>
+        <dd>11:00 - 17:00（L.O. 16:00）</dd>
+        <dt>Closed</dt>
+        <dd>水曜・木曜</dd>
+        <dt>Seats</dt>
+        <dd>1日10組限定・完全予約制</dd>
+        <dt>Parking</dt>
+        <dd>あり（3台）</dd>
+        <dt>Access</dt>
+        <dd>JR香椎線 酒殿駅<span class="sm">から</span>徒歩12分<br>
+        志免町コミュニティバス ○○停<span class="sm">から</span>徒歩3分</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p class="footer__brand">茶寮 凛</p>
+  <p class="footer__en">SARYO RIN</p>
+  <p class="footer__copy">&copy; 2026 茶寮 凛 &ensp;|&ensp; Crafted by <a href="https://fukuoka-connect.github.io/" target="_blank" rel="noopener">FUKUOKA CONNECT</a></p>
+</footer>
+
+<!-- ===== モバイル固定CTA ===== -->
+<div class="mobile-cta">
+  <a href="#" class="mobile-cta__btn" aria-label="LINEで予約する">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.104-.51-.275l-2.443-3.317v2.965c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.064-.022.134-.033.2-.033.195 0 .375.105.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+    LINE<span class="sm">で</span>予約する
+  </a>
+</div>
+
+<!-- ===== JavaScript ===== -->
+<script>
+(function() {
+  'use strict';
+
+  // NAV scroll effect
+  const nav = document.getElementById('nav');
+  let lastScroll = 0;
+  function onScroll() {
+    const y = window.scrollY;
+    if (y > 80) {
+      nav.classList.add('is-scrolled');
+    } else {
+      nav.classList.remove('is-scrolled');
+    }
+    lastScroll = y;
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  // IntersectionObserver fade-in
+  if ('IntersectionObserver' in window) {
+    const mo = window.matchMedia('(prefers-reduced-motion: reduce)');
+    if (!mo.matches) {
+      const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.15,
+        rootMargin: '0px 0px -40px 0px'
+      });
+      document.querySelectorAll('.fi').forEach(function(el) {
+        observer.observe(el);
+      });
+    } else {
+      document.querySelectorAll('.fi').forEach(function(el) {
+        el.classList.add('is-visible');
+      });
+    }
+  } else {
+    document.querySelectorAll('.fi').forEach(function(el) {
+      el.classList.add('is-visible');
+    });
+  }
+
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+    a.addEventListener('click', function(e) {
+      var target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    });
+  });
+})();
+</script>
+
+</body>
+</html>

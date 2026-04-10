@@ -281,6 +281,7 @@ a { color: inherit; text-decoration: none; }
 .space__photo {
   width: 100%;
   aspect-ratio: 4 / 5;
+  object-fit: cover;
 }
 .space__number {
   position: absolute;
@@ -394,6 +395,7 @@ a { color: inherit; text-decoration: none; }
 .tea__photo {
   width: 100%;
   aspect-ratio: 3 / 4;
+  object-fit: cover;
 }
 
 /* ========================================
@@ -419,6 +421,7 @@ a { color: inherit; text-decoration: none; }
 .wagashi__photo {
   width: 100%;
   aspect-ratio: 1 / 1.15;
+  object-fit: cover;
 }
 .wagashi__kanji {
   position: absolute;
@@ -891,7 +894,7 @@ a { color: inherit; text-decoration: none; }
 
 <!-- ===== HERO ===== -->
 <section class="hero">
-  <div class="hero__bg img-ph" role="img" aria-label="古民家の光が差す畳の間">photo : tatami room with light</div>
+  <img class="hero__bg" src="images/hero-kominka-interior.jpg" alt="古民家の光が差す畳の間" loading="eager">
   <div class="hero__overlay"></div>
   <div class="hero__copy fi">
     <h1 class="hero__catch">静けさ<span class="sm">を</span>、飲む。</h1>
@@ -907,7 +910,7 @@ a { color: inherit; text-decoration: none; }
 <section class="space">
   <div class="space__inner">
     <div class="space__visual fi">
-      <div class="space__photo img-ph" role="img" aria-label="築60年の古民家外観">photo : 60-year-old kominka</div>
+      <img class="space__photo" src="images/space-kominka-exterior.jpg" alt="築60年の古民家外観" loading="lazy">
       <span class="space__number">60</span>
     </div>
     <div class="space__content">
@@ -943,7 +946,7 @@ a { color: inherit; text-decoration: none; }
       </p>
     </div>
     <div class="tea__visual fi">
-      <div class="tea__photo img-ph" role="img" aria-label="八女茶を点てる様子">photo : brewing yame cha</div>
+      <img class="tea__photo" src="images/tea-brewing-yame.jpg" alt="八女茶を点てる様子" loading="lazy">
     </div>
   </div>
 </section>
@@ -952,7 +955,7 @@ a { color: inherit; text-decoration: none; }
 <section class="wagashi">
   <div class="wagashi__grid">
     <div class="wagashi__photo-wrap fi">
-      <div class="wagashi__photo img-ph" role="img" aria-label="季節の和菓子">photo : seasonal wagashi</div>
+      <img class="wagashi__photo" src="images/wagashi-sakuramochi.jpg" alt="季節の和菓子" loading="lazy">
       <span class="wagashi__kanji" aria-hidden="true">季</span>
     </div>
     <div class="wagashi__content fi fi-delay-1">
